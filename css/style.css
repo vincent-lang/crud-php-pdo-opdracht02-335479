@@ -1,0 +1,69 @@
+body * {
+    box-sizing: border-box;
+}
+body {
+    background-image: radial-gradient(rgba(0,0,0,1),rgba(63,94,251,1));
+    font-variant: Monserrat;
+    font: barlow condensed;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: lightgrey;
+}
+fieldset {
+    display: flex;
+    width: 50%;
+    margin: .5em 0;
+    flex-direction: column;
+    border-color: aqua;
+    background-color: lightgrey;
+}
+
+fieldset > label {
+    width: 100%;
+    margin-top: .5em;
+}
+label > input:not([type="radio"]),
+label > textarea,
+label > select {
+    width: 100%;
+    margin-top: .5em;
+}
+
+legend {
+    background-color: #00aeef;
+    color: white;
+}
+
+input#submit {
+    background-color: #11ac30;
+    border-color: #69f585;
+    height: 35px;
+    width: 60px;
+    color: white;
+    transition: 0.2s;
+}
+input#submit:hover {
+    background-color: #69f585;
+    border-color: #11ac30;
+}
+input {
+    padding:1%;
+    border: 1%;
+    box-shadow: 1%;
+    border-radius:1%;
+    border-color: black;
+    font-family: verdana;
+}
+
+input:not([type="radio"]):focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    box-shadow: 100px;
+    border-color: #efcb00;
+    outline: none;
+}
