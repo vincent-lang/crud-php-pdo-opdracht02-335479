@@ -48,13 +48,13 @@
             <label for="Kruiden">Kruiden</label>
             <br>
             Peterselie
-            <input type="checkbox" id="Pizzatoppings" name="choice1">
+            <input type="checkbox" id="Kruiden1" name="choice1">
             Oregano
-            <input type="checkbox" id="Pizzatoppings" name="choice2">
+            <input type="checkbox" id="Kruiden2" name="choice2">
             Chili flakes
-            <input type="checkbox" id="Pizzatoppings" name="choice3">
+            <input type="checkbox" id="Kruiden3" name="choice3">
             Zwarte peper
-            <input type="checkbox" id="Pizzatoppings" name="choice4">
+            <input type="checkbox" id="Kruiden4" name="choice4">
             <input id="submit" type="submit" value="Bestel">
             </fieldset>
     </form>
