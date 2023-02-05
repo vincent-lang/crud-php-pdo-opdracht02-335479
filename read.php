@@ -13,16 +13,16 @@ try {
     echo $e->getMessage();
 }
 
-$sql = "SELECT PId
+$sql = "SELECT Id
             ,Bodemformaat
             ,Saus
             ,Pizzatoppings
-            ,Kruiden1
-            ,Kruiden2
-            ,Kruiden3
-            ,Kruiden4
+            ,Peterselie
+            ,Oregano
+            ,Chili_flakes
+            ,Zwarte_peper
         FROM pizza
-        ORDER BY PId ASC";
+        ORDER BY Id ASC";
 
 $statement = $pdo->prepare($sql);
 
@@ -33,14 +33,14 @@ $result = $statement->fetchAll(PDO::FETCH_OBJ);
 $rows = "";
 foreach ($result as $info) {
     $rows .= "<tr>
-                <td>$info->PId</td>
+                <td>$info->Id</td>
                 <td>$info->Bodemformaat</td>
                 <td>$info->Saus</td>
                 <td>$info->Pizzatoppings</td>
-                <td>$info->Kruiden1</td>
-                <td>$info->Kruiden2</td>
-                <td>$info->Kruiden3</td>
-                <td>$info->Kruiden4</td>
+                <td>$info->Peterselie</td>
+                <td>$info->Oregano</td>
+                <td>$info->Chili_flakes</td>
+                <td>$info->Zwarte_peper</td>
                 <td>
                     <a href='delete.php?id={$info->Id}'>
                         <img src='img/b_drop.png' alt='Drop'</img>
@@ -58,10 +58,10 @@ foreach ($result as $info) {
 
 
 <h3>Bestelling gegevens</h3>
-<a href="index.php"><button>Nieuw Persoon</button></a>
+<a href="index.php"><button>nieuwe pizza</button></a>
 <table border="1">
     <thead>
-        <th>PId</th>
+        <th>Id</th>
         <th>Bodemformaat</th>
         <th>Saus</th>
         <th>Pizzatoppings</th>

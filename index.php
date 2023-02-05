@@ -12,11 +12,11 @@
 
 <body>
     <h1>Maak je eigen pizza</h1>
-    <form action="">
+    <form action="create.php" method="post">
     <fieldset>
-            <label for="Bodemformaat">Bodemformaat</label>
+            <label for="bodemformaat">Bodemformaat</label>
             <br>
-            <select name="Bodemformaat" id="Bodemformaat">
+            <select name="bodemformaat" id="bodemformaat">
                 <option value="Maak je keuze">Maak je keuze</option>
                 <option value="20 centimeter">20 centimeter</option>
                 <option value="25 centimeter">25 centimeter</option>
@@ -25,9 +25,9 @@
                 <option value="40 centimeter">40 centimeter</option>
             </select>
             <br>
-            <label for="Saus">Saus</label>
+            <label for="saus">Saus</label>
             <br>
-            <select name="Saus" id="Saus">
+            <select name="saus" id="saus">
                 <option value="Maak je keuze">Maak je keuze</option>
                 <option value="Tomatensaus">Tomatensaus</option>
                 <option value="Extra tomatensaus">Extra tomatensaus</option>
@@ -36,25 +36,25 @@
                 <option value="Créme fraiche">Créme fraiche</option>
             </select>
             <br>
-            <label for="Pizzatoppings">Pizzatoppings</label>
+            <label for="pizzatoppings">Pizzatoppings</label>
             <br>
             vegan
-            <input type="radio" id="Pizzatoppings" name="Pizzatoppings" value="Pizzatoppings">
+            <input type="radio" id="vegan" name="pizzatoppings">
             vegetarisch
-            <input type="radio" id="Pizzatoppings" name="Pizzatoppings" value="Pizzatoppings">
+            <input type="radio" id="vegetarisch" name="pizzatoppings">
             vlees
-            <input type="radio" id="Pizzatoppings" name="Pizzatoppings" value="Pizzatoppings">
+            <input type="radio" id="vlees" name="pizzatoppings">
             <br>
-            <label for="Kruiden">Kruiden</label>
+            <label for="kruiden">Kruiden</label>
             <br>
             Peterselie
-            <input type="checkbox" id="Kruiden1" name="choice1">
+            <input type="checkbox" id="peterselie" name="peterselie">
             Oregano
-            <input type="checkbox" id="Kruiden2" name="choice2">
+            <input type="checkbox" id="oregano" name="oregano">
             Chili flakes
-            <input type="checkbox" id="Kruiden3" name="choice3">
+            <input type="checkbox" id="chili_flakes" name="chili_flakes">
             Zwarte peper
-            <input type="checkbox" id="Kruiden4" name="choice4">
+            <input type="checkbox" id="zwarte_peper" name="zwarte_peper">
             <input id="submit" type="submit" value="Bestel">
             </fieldset>
     </form>

@@ -15,31 +15,31 @@ try {
     echo $e->getMessage();
 }
 
-$sql = "INSERT INTO pizza (PId
+$sql = "INSERT INTO pizza (Id
                         ,Bodemformaat
                         ,Saus
                         ,Pizzatoppings
-                        ,Kruiden1
-                        ,Kruiden2
-                        ,Kruiden3
-                        ,Kruiden4)
+                        ,Peterselie
+                        ,Oregano
+                        ,Chili_flakes
+                        ,Zwarte_peper)
             VALUES      (NULL
                         ,:bodemformaat
                         ,:saus
                         ,:pizzatoppings
-                        ,:kruiden1
-                        ,:Kruiden2
-                        ,:kruiden3
-                        ,:kruiden4);";
+                        ,:peterselie
+                        ,:oregano
+                        ,:chili_flakes
+                        ,:zwarte_peper);";
 $statement = $pdo->prepare($sql);
 
 $statement->bindValue(":bodemformaat", $_POST["bodemformaat"], PDO::PARAM_STR);
 $statement->bindValue(":saus", $_POST["saus"], PDO::PARAM_STR);
 $statement->bindValue(":pizzatoppings", $_POST["pizzatoppings"], PDO::PARAM_STR);
-$statement->bindValue(":kruiden1", $_POST["kruiden1"], PDO::PARAM_STR);
-$statement->bindValue(":Kruiden2", $_POST["Kruiden2"], PDO::PARAM_STR);
-$statement->bindValue(":kruiden3", $_POST["kruiden3"], PDO::PARAM_STR);
-$statement->bindValue(":kruiden4", $_POST["kruiden4"], PDO::PARAM_STR);
+$statement->bindValue(":peterselie", $_POST["peterselie"], PDO::PARAM_STR);
+$statement->bindValue(":oregano", $_POST["oregano"], PDO::PARAM_STR);
+$statement->bindValue(":chili_flakes", $_POST["chili_flakes"], PDO::PARAM_STR);
+$statement->bindValue(":zwarte_peper", $_POST["zwarte_peper"], PDO::PARAM_STR);
 
 $statement->execute();
 
