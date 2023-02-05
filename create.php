@@ -7,11 +7,9 @@ $dsn = "mysql:host=$dbHost;dbname=$dbName;charset=UTF8";
 try {
     $pdo = new PDO($dsn, $dbUser, $dbPass);
     if ($pdo) {
-
-    }else {
-
+    } else {
     }
-}catch (PDOException $e) {
+} catch (PDOException $e) {
     echo $e->getMessage();
 }
 

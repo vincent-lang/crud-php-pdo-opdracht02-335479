@@ -65,10 +65,10 @@ foreach ($result as $info) {
         <th>Bodemformaat</th>
         <th>Saus</th>
         <th>Pizzatoppings</th>
-        <th>Kruiden1</th>
-        <th>Kruiden2</th>
-        <th>Kruiden3</th>
-        <th>Kruiden4</th>
+        <th>Peterselie</th>
+        <th>Oregano</th>
+        <th>Chili_flakes</th>
+        <th>Zwarte_peper</th>
         <th></th>
         <th></th>
     </thead>

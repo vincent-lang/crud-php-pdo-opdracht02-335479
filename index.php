@@ -13,7 +13,7 @@
 <body>
     <h1>Maak je eigen pizza</h1>
     <form action="create.php" method="post">
-    <fieldset>
+        <fieldset>
             <label for="bodemformaat">Bodemformaat</label>
             <br>
             <select name="bodemformaat" id="bodemformaat">
@@ -39,11 +39,11 @@
             <label for="pizzatoppings">Pizzatoppings</label>
             <br>
             vegan
-            <input type="radio" id="vegan" name="pizzatoppings">
+            <input type="radio" id="vegan" name="pizzatoppings" value="vegan">
             vegetarisch
-            <input type="radio" id="vegetarisch" name="pizzatoppings">
+            <input type="radio" id="vegetarisch" name="pizzatoppings" value="vegetarisch">
             vlees
-            <input type="radio" id="vlees" name="pizzatoppings">
+            <input type="radio" id="vlees" name="pizzatoppings" value="vlees">
             <br>
             <label for="kruiden">Kruiden</label>
             <br>
@@ -56,7 +56,7 @@
             Zwarte peper
             <input type="checkbox" id="zwarte_peper" name="zwarte_peper">
             <input id="submit" type="submit" value="Bestel">
-            </fieldset>
+        </fieldset>
     </form>
 </body>
 
